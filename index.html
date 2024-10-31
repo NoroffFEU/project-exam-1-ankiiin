@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavara Wellness - Blog Feed</title>
+    <link rel="stylesheet" href="main.css"> <!-- Felles styling -->
+    <link rel="stylesheet" href="blogfeed.css"> <!-- Spesifikk styling for blog feed -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="main.js" defer></script> <!-- For felles funksjoner -->
+    <script src="blogfeed.js" defer></script> <!-- For spesifikke funksjoner for blog feed -->
+</head>
+<body>
+    <header>
+        <a href="index.html" class="responsive-logo-link">
+            <h1 class="responsive-logo">Lavara Wellness</h1>
+        </a>
+        <nav class="desktop-nav">
+            <span class="nav-text">Blog Posts</span>
+        </nav>
+        <button class="join-button" onclick="toggleJoinPopup()">Join us!</button>
+        <div class="hamburger-menu" onclick="toggleHamburgerMenu()">
+            <div class="hamburger-bar"></div>
+            <div class="hamburger-bar"></div>
+            <div class="hamburger-bar"></div>
+        </div>
+    </header>
+    <main>
+        <h2>Blog Feed Page</h2>
+        <div class="blog-feed-grid">
+            <div class="blog-post">
+                <img src="path/to/image1.jpg" alt="Blog Post 1">
+                <div class="blog-post-title">Blog Post Title 1</div>
+            </div>
+            <div class="blog-post">
+                <img src="path/to/image2.jpg" alt="Blog Post 2">
+                <div class="blog-post-title">Blog Post Title 2</div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Please sign up to our newsletter!</p>
+        <div class="newsletter-signup">
+            <input type="email" placeholder="Email address" aria-label="Email address">
+            <button class="signup-button">Sign up</button>
+        </div>
+    </footer>
+    <div class="popup" id="joinPopup" onclick="closeOnClickOutside(event, 'joinPopup')">
+        <div class="popup-content">
+            <button class="close-button" onclick="toggleJoinPopup()">✕</button>
+            <h3 class="popup-heading">Welcome! Choose an option</h3>
+            <button class="login-button">Login</button>
+            <button class="register-button">Register</button>
+        </div>
+    </div>
+    <div class="popup" id="hamburgerPopup" onclick="closeOnClickOutside(event, 'hamburgerPopup')">
+        <div class="popup-content">
+            <button class="close-button" onclick="toggleHamburgerMenu()">✕</button>
+            <button class="hamburger-join-button" onclick="toggleJoinPopup()">Join us</button>
+            <button class="blog-button" onclick="toggleHamburgerMenu()">Blog Posts</button>
+        </div>
+    </div>
+</body>
+</html>
