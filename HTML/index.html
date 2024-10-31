@@ -3,21 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lavara Wellness - Blog Feed</title>
-    <link rel="stylesheet" href="main.css"> <!-- Felles styling -->
-    <link rel="stylesheet" href="blogfeed.css"> <!-- Spesifikk styling for blog feed -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <script src="main.js" defer></script> <!-- For felles funksjoner -->
-    <script src="blogfeed.js" defer></script> <!-- For spesifikke funksjoner for blog feed -->
+    <title>Lavara Wellness - Home</title>
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/blogfeed.css">
+    <script src="../JS/main.js" defer></script>
+    <script src="../JS/blogfeed.js" defer></script>
 </head>
 <body>
     <!-- Header -->
     <header>
-        <a href="index.html" class="responsive-logo-link">
+        <a href="../HTML/index.html" class="responsive-logo-link">
             <h1 class="responsive-logo">Lavara Wellness</h1>
         </a>
         <nav class="desktop-nav">
-            <span class="nav-text">Blog Posts</span>
+            <a href="../HTML/posts.html" class="nav-text">Blog Posts</a>
         </nav>
         <button class="join-button" onclick="toggleJoinPopup()">Join us!</button>
         <div class="hamburger-menu" onclick="toggleHamburgerMenu()">
@@ -27,9 +26,14 @@
         </div>
     </header>
 
-    <!-- Hovedseksjon for Blog Feed -->
+    <!-- Hovedseksjon for Blog Feed Page -->
     <main>
-        <!-- Hvit strek over velkomsttekst -->
+        <!-- Karusell Seksjon -->
+        <div class="carousel-section">
+            <div class="carousel-placeholder">Carousel goes here</div>
+        </div>
+
+        <!-- Strek mellom karusellen og velkomstteksten -->
         <hr class="section-divider">
 
         <!-- Velkomsttekst -->
@@ -48,8 +52,7 @@
         <p>Please sign up to our newsletter!</p>
         <div class="newsletter-signup">
             <input type="email" placeholder="Email address" aria-label="Email address">
-            <!-- Sign up button as a link to newsletter.html -->
-            <a href="newsletter.html">
+            <a href="../HTML/newsletter.html">
                 <button class="signup-button">Sign up</button>
             </a>
         </div>

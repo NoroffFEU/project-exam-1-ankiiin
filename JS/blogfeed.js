@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function() {
     thumbnails.forEach(thumbnail => {
         thumbnail.addEventListener("mouseover", function(event) {
             if (window.innerWidth > 768) {
-                // Legger til hover-effekt for desktop
                 const img = event.currentTarget.querySelector("img");
                 const text = event.currentTarget.querySelector(".thumbnail-text");
                 img.style.filter = "blur(13px) brightness(0.7)";
@@ -14,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
         thumbnail.addEventListener("mouseout", function(event) {
             if (window.innerWidth > 768) {
-                // Fjerner hover-effekten for desktop
                 const img = event.currentTarget.querySelector("img");
                 const text = event.currentTarget.querySelector(".thumbnail-text");
                 img.style.filter = "none";
