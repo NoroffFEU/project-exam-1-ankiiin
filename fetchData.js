@@ -1,6 +1,5 @@
 const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYW5raWlpbiIsImVtYWlsIjoiYW5uaGFtNDkzNDRAc3R1ZC5ub3JvZmYubm8iLCJpYXQiOjE3MzAxNDUxNTZ9.T6ygDGizewBV9q2iNAwVtO_bTa9J3bDbnLcUMCrF0EgA";
 
-// Funksjon for å generere en tilfeldig dato mellom to datoer
 function generateRandomDate(start, end) {
   const startDate = new Date(start);
   const endDate = new Date(end);
@@ -40,7 +39,6 @@ function createPostElement(post, container) {
   const postElement = document.createElement("div");
   postElement.classList.add("post");
 
-  // Generer en tilfeldig dato for hvert innlegg
   const postDate = generateRandomDate("2024-01-01", "2024-12-31");
 
   postElement.innerHTML = `
@@ -54,7 +52,6 @@ function createPostElement(post, container) {
   container.appendChild(postElement);
 }
 
-// Kall fetchPosts én gang ved DOMContentLoaded og fjern event-listeneren etterpå
 document.addEventListener("DOMContentLoaded", function handler() {
   fetchPosts();
   document.removeEventListener("DOMContentLoaded", handler);

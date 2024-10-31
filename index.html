@@ -11,6 +11,7 @@
     <script src="blogfeed.js" defer></script> <!-- For spesifikke funksjoner for blog feed -->
 </head>
 <body>
+    <!-- Header -->
     <header>
         <a href="index.html" class="responsive-logo-link">
             <h1 class="responsive-logo">Lavara Wellness</h1>
@@ -25,26 +26,36 @@
             <div class="hamburger-bar"></div>
         </div>
     </header>
+
+    <!-- Hovedseksjon for Blog Feed -->
     <main>
-        <h2>Blog Feed Page</h2>
-        <div class="blog-feed-grid">
-            <div class="blog-post">
-                <img src="path/to/image1.jpg" alt="Blog Post 1">
-                <div class="blog-post-title">Blog Post Title 1</div>
-            </div>
-            <div class="blog-post">
-                <img src="path/to/image2.jpg" alt="Blog Post 2">
-                <div class="blog-post-title">Blog Post Title 2</div>
-            </div>
-        </div>
+        <!-- Hvit strek over velkomsttekst -->
+        <hr class="section-divider">
+
+        <!-- Velkomsttekst -->
+        <h2 class="page-title">Welcome to Lavara Wellness</h2>
+        <p class="intro-text">
+            At Lavara Wellness, we believe in embracing a healthier lifestyle through nourishing food, mindful practices, and holistic care. Here, you'll find inspiration on everything from delicious and wholesome recipes to meditation tips, skincare routines, and wellness advice. Whether you're looking to elevate your meals or find balance in your day-to-day, Lavara Wellness is your space to explore and nurture both body and mind. Dive in, and let's embark on this journey to better living, together!
+        </p>
+        <hr class="section-divider">
+
+        <!-- Latest Posts Overskrift -->
+        <h3 class="latest-posts-title">Latest Posts</h3>
     </main>
+    
+    <!-- Footer -->
     <footer>
         <p>Please sign up to our newsletter!</p>
         <div class="newsletter-signup">
             <input type="email" placeholder="Email address" aria-label="Email address">
-            <button class="signup-button">Sign up</button>
+            <!-- Sign up button as a link to newsletter.html -->
+            <a href="newsletter.html">
+                <button class="signup-button">Sign up</button>
+            </a>
         </div>
     </footer>
+
+    <!-- Join us Popup -->
     <div class="popup" id="joinPopup" onclick="closeOnClickOutside(event, 'joinPopup')">
         <div class="popup-content">
             <button class="close-button" onclick="toggleJoinPopup()">✕</button>
@@ -53,6 +64,8 @@
             <button class="register-button">Register</button>
         </div>
     </div>
+
+    <!-- Hamburger Menu Popup -->
     <div class="popup" id="hamburgerPopup" onclick="closeOnClickOutside(event, 'hamburgerPopup')">
         <div class="popup-content">
             <button class="close-button" onclick="toggleHamburgerMenu()">✕</button>

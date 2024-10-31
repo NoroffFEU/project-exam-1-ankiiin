@@ -1,58 +1,31 @@
-.blog-feed h2 {
+.page-title {
+    font-size: 28px;
+    color: #EDE8E1;
+    text-align: center;
+    margin-top: 60px; /* Økt toppmargin for mer avstand fra øvre strek */
+    margin-bottom: 30px; /* Økt bunnmargin for mer avstand til innhold under */
+}
+
+.intro-text {
+    color: #EDE8E1;
+    line-height: 1.8;
+    max-width: 80%;
+    margin: 0 auto 40px auto; /* Økt bunnmargin for mer avstand til neste strek */
+    text-align: center;
+    padding: 0 15px;
+}
+
+.section-divider {
+    width: 96%;
+    margin: 30px auto; /* Økt topp- og bunnmargin for mer avstand fra innholdet */
+    border: none;
+    border-top: 1px solid #EDE8E1;
+}
+
+.latest-posts-title {
     font-size: 24px;
     color: #EDE8E1;
     text-align: center;
-    margin: 20px 0;
-}
-
-/* Thumbnail grid styling */
-.thumbnail-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
-.thumbnail {
-    position: relative;
-    overflow: hidden;
-}
-
-.thumbnail img {
-    width: 100%;
-    height: auto;
-    transition: filter 0.3s ease;
-}
-
-/* Hover-effekt på desktop */
-.thumbnail:hover img {
-    filter: blur(13px) brightness(0.7);
-}
-
-.thumbnail-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #FFFFFF;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.thumbnail:hover .thumbnail-text {
-    opacity: 1;
-}
-
-/* Mobilvisning - alltid blurry */
-@media (max-width: 768px) {
-    .thumbnail img {
-        filter: blur(4px) brightness(0.7);
-    }
-
-    .thumbnail-text {
-        opacity: 1;
-    }
+    margin-top: 40px; /* Økt toppmargin for mer avstand fra øvre strek */
+    margin-bottom: 20px; /* Standard bunnmargin */
 }

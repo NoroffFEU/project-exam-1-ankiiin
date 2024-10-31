@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Sørger for hover-effekt på desktop og permanent blurry på mobil
     const thumbnails = document.querySelectorAll('.thumbnail');
     
     thumbnails.forEach(thumbnail => {
@@ -24,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    // Sørger for at mobilversjonen alltid er blurry med teksten synlig
     function setMobileThumbnailEffect() {
         if (window.innerWidth <= 768) {
             thumbnails.forEach(thumbnail => {
@@ -36,7 +34,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    // Initialiser mobil-effekten og lytt til vinduendringer
     setMobileThumbnailEffect();
     window.addEventListener("resize", setMobileThumbnailEffect);
 });
